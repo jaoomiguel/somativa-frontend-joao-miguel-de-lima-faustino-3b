@@ -6,8 +6,7 @@ if (saudacao) {
         hora < 12
             : "Bom dia! Bem-vindo à Sessão Matinê!"
         
-        hora > 12
-        hora < 18
+        hora > 12 & < 18
             : "Boa tarde! Sessão da Tarde liberada!"
 
         hora > 18
@@ -43,9 +42,8 @@ botoesPedido.forEach((botao) => {
             `🥘 Sucesso! Sua compra do ingresso para o filme: "${nomeFilme}" foi finalizado com sucesso!.`,
         );
 
-        // Efeito visual no botão após clique
         botao.textContent = "✓ Pedido Enviado";
-        botao.style.backgroundColor = "#27ae60"; // Verde Sucesso
+        botao.style.backgroundColor = "#27ae60"; 
         botao.disabled = true;
     });
 });
