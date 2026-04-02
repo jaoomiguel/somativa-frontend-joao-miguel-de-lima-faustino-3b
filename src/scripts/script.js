@@ -23,9 +23,9 @@ qtd.addEventListener('input', () => {
 });
 
 const Filme {
-    constructor(nome, preco) {
+    constructor(nome, preço) {
         this.nome = nome;
-        this.preco = 35;
+        this.preço = 35;
 
     }
 }
